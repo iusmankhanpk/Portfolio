@@ -1,8 +1,19 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
+
+body {
+  background-color: $black-m;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 html,
 body {
   font-family: "serif";
@@ -10,10 +21,10 @@ body {
 }
 
 input:focus,
-textarea:focus
-select:focus {
+textarea:focus select:focus {
   outline: none;
 }
-img {
-  max-width: 100%;
+
+ul {
+  list-style: none;
 }

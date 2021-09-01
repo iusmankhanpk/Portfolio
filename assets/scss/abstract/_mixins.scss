@@ -43,7 +43,6 @@
   }
 }
 
-// GRID
 // ABSOLUTE ELEMENT
 @mixin absolute($top, $right, $bottom, $left, $width, $height, $pseudo: false) {
   @if $pseudo {

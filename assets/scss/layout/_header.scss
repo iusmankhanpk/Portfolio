@@ -1,1 +1,45 @@
-// Default file
+.header {
+  @include flexbox(center, space-between);
+
+  max-width: 100vw;
+  width: 100%;
+  height: 70px;
+  padding: 10px 100px;
+
+  &_logo {
+    width: 50px;
+    height: auto;
+  }
+
+  &_navbar {
+    max-width: 400px;
+    width: 100%;
+
+    ul {
+      @include flexbox(center, space-between);
+
+      li {
+        a {
+          font-size: 1.8rem;
+          color: $text-blue;
+          text-decoration: none;
+          text-transform: capitalize;
+          font-weight: 500;
+          position: relative;
+
+          &::after {
+            @include absolute(null, null, -5px, 0, 0%, 2px, true);
+            background-color: $text-blue;
+            transition: 0.5s ease;
+          }
+
+          &:hover {
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
