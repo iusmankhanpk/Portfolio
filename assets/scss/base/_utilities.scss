@@ -1,0 +1,49 @@
+[class^="container"] {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0px auto;
+  padding: 0px 15px;
+
+  &[class*="--fluid"] {
+    max-width: 100%;
+  }
+}
+
+// DISPLAY
+.d {
+  &-flex {
+    display: flex;
+  }
+  &-block {
+    display: block;
+  }
+  &-inline-block {
+    display: inline-block;
+  }
+}
+
+// FLEX
+.justify-content {
+  &-center {
+    justify-content: center;
+  }
+  &-between {
+    justify-content: space-between;
+  }
+}
+.align-items {
+  &-center {
+    align-items: center;
+  }
+  &-end {
+    align-items: flex-end;
+  }
+}
+.flex {
+  &-1 {
+    flex: 1;
+  }
+  &-wrap {
+    flex-wrap: wrap;
+  }
+}
